@@ -65,7 +65,7 @@ export default class LinkedList {
 
     let deletedNode = null;
 
-    // If the head must be deleted then make next node that is differ
+    // If the head must be deleted then make next node that is different
     // from the head to be a new head.
     while (this.head && this.compare.equal(this.head.value, value)) {
       deletedNode = this.head;
@@ -180,7 +180,7 @@ export default class LinkedList {
    * @return {LinkedList}
    */
   fromArray(values) {
-    values.forEach(value => this.append(value));
+    values.forEach((value) => this.append(value));
 
     return this;
   }
@@ -205,7 +205,7 @@ export default class LinkedList {
    * @return {string}
    */
   toString(callback) {
-    return this.toArray().map(node => node.toString(callback)).toString();
+    return this.toArray().map((node) => node.toString(callback)).toString();
   }
 
   /**
